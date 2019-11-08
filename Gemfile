@@ -3,6 +3,7 @@ git_source(:github) {|repo| "https://github.com/#{repo}.git"}
 
 ruby '2.6.1'
 
+gem 'simple_form', '~> 5.0', '>= 5.0.1'
 gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
@@ -17,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'acts_as_votable', '~> 0.12.1'
+gem 'record_tag_helper', '~> 1.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
