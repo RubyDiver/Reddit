@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
+
   def create
     @link = Link.find(params[:link_id])
     @comment = @link.comments.new(comment_params)
